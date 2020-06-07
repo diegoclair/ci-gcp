@@ -19,6 +19,7 @@ steps:
 - name: 'gcr.io/$PROJECT_ID/docker-compose'
   args: ['version']
 
+#here the cloud build do the push automatically
 images:
 - 'gcr.io/$PROJECT_ID/docker-compose:latest'
 - 'gcr.io/$PROJECT_ID/docker-compose:${_DOCKER_COMPOSE_VERSION}'
